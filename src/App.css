@@ -1,0 +1,98 @@
+/* src/index.css - estilos mínimos que usa el ejemplo */
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+/* tarjeta */
+.movie-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.poster {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title {
+  margin: 0;
+  font-size: 15px;
+}
+
+.rating {
+  margin: 0;
+  color: #555;
+  font-size: 13px;
+}
+
+/* botones */
+.btns {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.btn {
+  flex: 1;
+  padding: 8px 6px;
+  border-radius: 6px;
+  border: 1px solid #d0d0d0;
+  background: #f3f3f3;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background .12s, color .12s, transform .06s;
+}
+
+/* estados activos */
+.seen-active {
+  background: #16a34a;
+  color: #fff;
+  border-color: #16a34a;
+}
+
+.pending-active {
+  background: #f59e0b;
+  color: #fff;
+  border-color: #f59e0b;
+}
+
+/* hover inactivo */
+.btn:not(.seen-active):not(.pending-active):hover { filter: brightness(0.96); }
+
+/* filtros */
+.filter-btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  cursor: pointer;
+}
+.filter-btn.active {
+  background: #e6f0ff;
+  border-color: #90b4ff;
+}
