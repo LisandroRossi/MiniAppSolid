@@ -20,7 +20,6 @@ export default function App() {
     const results = await searchMovies(q); 
     const merged = results.map((m) => {
       const existing = savedMap()[m.id];
-      // normalizo campos: poster y rating
       const poster = existing?.poster || (m.poster_path ? `https://image.tmdb.org/t/p/w300${m.poster_path}` : null);
       const rating = existing?.rating ?? (m.vote_average ?? null);
       return {

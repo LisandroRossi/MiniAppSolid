@@ -7,7 +7,6 @@ export function getPosterUrl(path) {
 
 
 
-// Hook simple para persistir en localStorage
 export function useLocalStorage(key, initial = {}) {
   const initialVal = (() => {
     try {

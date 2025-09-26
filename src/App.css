@@ -1,4 +1,4 @@
-/* src/index.css - estilos mínimos que usa el ejemplo */
+
 
 .movies-grid {
   display: grid;
@@ -50,7 +50,7 @@
   font-size: 13px;
 }
 
-/* botones */
+
 .btns {
   display: flex;
   gap: 8px;
@@ -68,7 +68,7 @@
   transition: background .12s, color .12s, transform .06s;
 }
 
-/* estados activos */
+
 .seen-active {
   background: #16a34a;
   color: #fff;
@@ -81,10 +81,10 @@
   border-color: #f59e0b;
 }
 
-/* hover inactivo */
+
 .btn:not(.seen-active):not(.pending-active):hover { filter: brightness(0.96); }
 
-/* filtros */
+
 .filter-btn {
   padding: 6px 10px;
   border-radius: 8px;

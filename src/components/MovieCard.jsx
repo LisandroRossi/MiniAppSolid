@@ -2,7 +2,7 @@
 import { Show } from "solid-js";
 
 export default function MovieCard(props) {
-  // NO usar señal local para status: lo leemos de props.movie (el padre actualiza savedMap)
+
   const movie = props.movie;
 
 
@@ -15,10 +15,10 @@ export default function MovieCard(props) {
   };
 
   const remove = () => {
-    props.onChangeStatus(movie.id, "none"); // quita de guardadas
+    props.onChangeStatus(movie.id, "none"); 
   };
 
-  // resolver poster y rating con tolerancia a diferentes shapes
+
   const posterUrl = movie.poster || "https://via.placeholder.com/300x445?text=No+Poster";
   const rating = movie.rating ?? movie.vote_average ?? "—";
 
